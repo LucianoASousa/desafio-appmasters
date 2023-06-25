@@ -4,7 +4,7 @@ import { SectionCard } from './SectionCard'
 
 export default async function ContentCards({
   genre,
-  name,
+  name = '',
 }: {
   genre: string
   name: string
@@ -18,7 +18,7 @@ export default async function ContentCards({
   if (genre !== '') gamesList = games.filter((game) => game.genre === genre)
 
   const searchByName = gamesList.filter((game) =>
-    game.title.toLowerCase().includes(name?.toLowerCase()),
+    game.title.toLowerCase().includes(name.toLowerCase()),
   )
 
   return (
