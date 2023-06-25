@@ -2,10 +2,13 @@
 
 import { ChangeEvent, useState, useTransition } from 'react'
 import { GameCardInterface } from '@/interfaces/cardInterface'
+import Image from 'next/image'
 
 import { GameCard } from './GameCard'
 import { SelectDemo } from './FilterButton'
 import { useRouter } from 'next/navigation'
+
+import Logo from '@/assets/images/logo.svg'
 
 export function SectionCard({
   defaultGenre,
@@ -43,7 +46,7 @@ export function SectionCard({
   }
 
   return (
-    <section className="mx-4 flex w-full flex-col items-center gap-24 overflow-hidden pt-10">
+    <section className="mx-4 flex w-full flex-col items-center gap-24 overflow-hidden pt-10 md:py-2">
       <div className="flex w-full max-w-[1010px] flex-col items-center gap-20">
         <div className="flex w-full flex-col items-end gap-2">
           <form className="flex w-full flex-col items-center gap-5">
@@ -57,7 +60,14 @@ export function SectionCard({
           <SelectDemo listGenres={listGenres} handleClick={handleClick} />
         </div>
         {isPending ? (
-          <span className="text-amber-500">...Loading</span>
+          <div className="flex h-screen w-full animate-spin items-center justify-center">
+            <Image
+              src={Logo}
+              width={80}
+              height={80}
+              alt="Imagem da Logo girando"
+            />
+          </div>
         ) : (
           <div className="grid h-screen w-full grid-cols-coluna gap-5 overflow-auto ">
             {results?.map((game) => (

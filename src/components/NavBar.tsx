@@ -15,7 +15,7 @@ import { SlSocialLinkedin } from 'react-icons/sl'
 export function NavBar() {
   const [focus, setFocus] = useState('')
   return (
-    <nav className="flex h-full w-full min-w-[500px] max-w-[432px] flex-col items-center justify-between bg-zinc-950 pb-5 pt-12">
+    <nav className="flex h-full w-full min-w-[500px] max-w-[432px] flex-col items-center justify-between bg-zinc-950 pb-5 pt-12 md:hidden">
       <div className="flex flex-col gap-36">
         <div className="flex items-center gap-2.5">
           <Image src={Logo} alt="logo" width={80} height={40} />

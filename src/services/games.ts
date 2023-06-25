@@ -9,9 +9,9 @@ export async function getGames() {
 
   const options = {
     headers: myHeaders,
-    next: { revalidate: 1 },
+    next: { revalidate: 30 },
   }
 
   const response = await fetch(URL, options)
-  return response.json()
+  return { data: await response.json(), status: response.status }
 }

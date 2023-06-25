@@ -19,6 +19,10 @@ module.exports = {
       gridTemplateColumns: {
         coluna: 'repeat(auto-fill, minmax(320px, 1fr))',
       },
+      screens: {
+        md: { max: '767px' },
+        lg: { min: '768px' },
+      },
     },
   },
   plugins: [],
