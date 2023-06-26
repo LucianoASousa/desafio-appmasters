@@ -62,18 +62,17 @@ export default async function Home() {
               <span className="text-red-500">
                 500, 502, 503, 504, 507, 508 ou 509,{' '}
               </span>
-              apresentar ao usuário "O servidor falhou em responder, tente
-              recarregar a página".
+              apresentar ao usuário O servidor falhou em responder, tente
+              recarregar a página.
             </li>
             <li>
-              Caso a API retorne outros erros, apresentar "O servidor não
-              conseguirá responder por agora, tente voltar novamente mais
-              tarde".
+              Caso a API retorne outros erros, apresentar O servidor não
+              conseguirá responder por agora, tente voltar novamente mais tarde.
             </li>
             <li>
               Ao realizar uma chamada, não esperar mais que 5 segundos pelo
               retorno. Se os dados demorarem mais de 5 segundos para retornar,
-              apresentar "O servidor demorou para responder, tente mais tarde".
+              apresentar O servidor demorou para responder, tente mais tarde.
             </li>
             <li>
               Sempre que apresentar uma mensagem para o usuário, ou tiver os
@@ -84,7 +83,7 @@ export default async function Home() {
               título, com busca case insensitive.
             </li>
             <li>
-              Uma vez que tenha os dados em mãos, veja quais "genre" foram
+              Uma vez que tenha os dados em mãos, veja quais genre foram
               retornados e permita ao usuário selecionar um deles, e então
               filtre para exibir apenas jogos do gênero selecionado.
             </li>
