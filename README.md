@@ -29,6 +29,8 @@ além disso fiz o filtro passando por parametro no navegador.
 - Uma vez que tenha os dados em mãos, veja quais `genre` foram retornados e permita ao usuário selecionar um deles, e então filtre para exibir apenas jogos do gênero selecionado.
 
 <br>
-<imagem src='../../docs/tela1.png' alt='tela1' width='100%'/>
+<img src='https://github.com/LucianoASousa/desafio-appmasters/blob/main/docs/tela.png' alt='tela1' width='100%'/>
 <br>
-<imagem src='../../docs/tela2.png' alt='tela2' width='100%'/>
+<img src='https://github.com/LucianoASousa/desafio-appmasters/blob/main/docs/tela2.png' alt='tela2' width='100%'/>
+
+MAIS DETALHES ACESSE: https://desafio-appmasters.vercel.app/
